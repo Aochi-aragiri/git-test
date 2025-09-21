@@ -1,0 +1,9 @@
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: palegreen;
+    border: 1px solid red;
+    /*Вертикальні марджини накладаються (top bottom)*/
+    /*Падінки "розтягують" елемент*/
+}
+.box1 {mar}

@@ -1,0 +1,27 @@
+span {
+    height: 20px;
+    width: 100 px;
+    margin-left: 10 px;
+    margin-top: 100px;
+    padding-left: 10px;
+    padding-top: 100px;
+    /* Вертикальні відступи не можна задавати інлайновим елементом */
+ display: inline-block;
+     /* Можна властивості інпут задати значення блоку тоді на інлайн виконуються умови, як на блочних елементах*/
+}/* У інлайн елементи не можна додавати блочні, бо буде візуальна помилка
+Наприклад <span><div>Div</div><span> є неправильним записом, хоч html і пропустить*/
+/*блочні елементи не можуть стояти в один рядок. інлайн-блочні - можуть (й інлайні також)*/
+input {
+    height: 20px;
+    width: 300px;
+    /*margin-left: 16px;
+    margin-right: 16px;*/
+    /*margin: [all]*/
+    /*margin: 10px*/
+    /*margin: [vertical horizontal]*/
+    /*margin: 12 px 16px;*/
+    /*margin: [top horizontal bottom]*/
+    /*margin: 10 px 20px 5px;*/
+    /*margin [top right bottom left]*/
+    /*Можна в умови дописати "0", якщо якесь одне значення не потрібно змінювати*/
+}

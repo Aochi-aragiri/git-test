@@ -1,0 +1,55 @@
+body {
+    font-family: sans-serif;
+}
+p {
+    color:violet ;
+    font-size: 20px;
+}
+.text_blue {
+    color:rgb(9, 9, 133)
+}
+p.text_gray {
+    color:rgb(191, 191, 227)
+}
+#id1 {
+    color:brown
+}
+button[type='button'] {
+    color: olive
+}
+.btn{
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    padding: 0;
+    font-family: inherit;
+}
+.bttn{
+    background-color: black;
+    color:azure !important;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    padding: 10px;
+    font-family: inherit;
+    cursor: pointer;
+    transition: all 300ms ease ease-in;
+    width:300px;
+}
+.bttn:hover {
+    background-color:rgba(0, 0, 0, 0.703);
+}
+.bttn:active{
+    transform: scale(90%);
+}
+.block-button {
+    display: block;
+    margin-bottom: 10px; /* необов'язково для відступу між кнопками */}
+.block {
+    width: 300px;
+    height: 300px; 
+    background-color: palegreen;
+    padding: 10px;
+    border: 2px solid green;
+    box-sizing: border-box;
+}

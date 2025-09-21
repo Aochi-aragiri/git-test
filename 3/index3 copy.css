@@ -1,0 +1,17 @@
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: palevioletred;
+    border: 2px solid black;
+    /*margin-top: 20px;
+    margin-left: 20px;*/
+}
+/*тільки прямі елементи рахуються дочірними для контейнеру*/
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    height: 100vh;
+}
+.box1 {height: 50px;}

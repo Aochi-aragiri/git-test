@@ -281,7 +281,6 @@ button {
   padding: 80px 76px 50px;
   border: 2px solid #dddddd;
   border-radius: 10px;
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -355,5 +354,132 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 36px;
 }
+
 /* /Network */
+
+/* Reviews */
+
+.reviews {
+  padding-top: 50px;
+  padding-bottom: 180px;
+}
+
+.review-card {
+  border: 2px solid #dddddd;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.review-card:hover {
+  border-color: #f53855;
+}
+
+.review-card__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.review-card__avatar {
+  margin-right: 20px;
+}
+
+.review-card__info {
+  flex-grow: 1;
+}
+
+.review-card__name {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 18px;
+  color: #0b132a;
+  margin-bottom: 4px;
+}
+
+.review-card__location {
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.review-card__rating {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.review-card__text {
+  font-size: 16px;
+  line-height: 30px;
+  color: #0b132a;
+}
+
+/* Змінює задане положення кнопок свайперу */
+.swiper-pagination {
+  position: static;
+  width: auto !important;
+}
+
+/* Задають стилі кружочкам перемикання слайдерів */
+.swiper-pagination-bullet {
+  width: 16px;
+  height: 16px;
+  background-color: #dde0e4;
+  opacity: 1;
+  border-radius: 16px;
+  transition-property: width, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: ease-in-out;
+}
+/* Задають стиль вибраному активному кружечку */
+.swiper-pagination-bullet-active {
+  width: 46px;
+  background-color: #f53855;
+}
+/* Прибирають стрілочку, яка стояла за замовченням */
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  content: none;
+}
+/* Задають стилі кнопочкам перемикання (в яких є стрілочки) */
+.swiper-button-next,
+.swiper-button-prev {
+  position: static;
+  margin-top: 0;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #f53858;
+  color: #fff;
+  border: 2px solid #f53838;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Задають розмір svg зображенням стрілочкам в середині кружечків */
+.swiper-button-prev svg,
+.swiper-button-next svg {
+  width: auto;
+  height: auto;
+}
+
+/* Задають стиль кнопці, яка має бути неактивна */
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled {
+  opacity: 1;
+  background-color: #fff;
+  color: #f53838;
+}
+.reviews__slider-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.reviews__slider-nav {
+  display: flex;
+  gap: 20px;
+}
+/* /Reviews */

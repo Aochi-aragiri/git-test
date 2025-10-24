@@ -204,9 +204,6 @@ button {
   .hero__info {
     min-width: 50%;
   }
-  .stat-item {
-    padding: 16px 64px;
-  }
 }
 
 @media (max-width: 890px) {
@@ -217,10 +214,6 @@ button {
   .hero__stats {
     flex-direction: column;
     align-items: center;
-  }
-
-  .stat-item {
-    border-right: none;
   }
 }
 
@@ -238,6 +231,12 @@ button {
 
 .stat-item:last-child {
   border-right: none;
+}
+
+@media (max-width: 1080px) {
+  .stat-item {
+    border-right: none;
+  }
 }
 
 .stat-item__icon {
@@ -344,7 +343,7 @@ button {
   padding-bottom: 74px;
 }
 
-.plans_list {
+.plans__list {
   display: flex;
   justify-content: space-between;
 }
@@ -424,6 +423,12 @@ button {
     gap: 16px;
     align-items: center;
   }
+  .network-social__amazon {
+    margin: -64px 0 -80px;
+  }
+  .network-social__netflix {
+    margin: -20px 0;
+  }
 }
 
 /* /Plans */
@@ -472,6 +477,7 @@ button {
   border: 2px solid #dddddd;
   border-radius: 10px;
   padding: 30px;
+  margin: 10px;
 }
 
 .review-card:hover {

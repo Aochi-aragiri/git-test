@@ -3,7 +3,7 @@ const swiper = new Swiper(".swiper", {
   direction: "horizontal",
   loop: false,
   centeredSlides: true,
-  slidesPerView: 3,
+  slidesPerView: 1, // За замовчуванням 3 слайди
   spaceBetween: 50,
 
   // If we need pagination
@@ -15,5 +15,13 @@ const swiper = new Swiper(".swiper", {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
+  },
+
+  // Aдаптивність
+  breakpoints: {
+    // коли ширина екрану менша за 890px
+    890: {
+      slidesPerView: 3, // показувати 1 слайд
+    },
   },
 });

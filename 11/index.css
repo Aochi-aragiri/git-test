@@ -1,0 +1,145 @@
+html {
+  --primary-color: #5454d4;
+  --button-radius: 10px;
+  --font-family: sans-serif;
+}
+
+body {
+  font-family: var(--font-family);
+}
+
+.btn {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 12px;
+  border: none;
+}
+
+.btn_round {
+  border-radius: var(--button-radius);
+}
+
+.box {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 250px;
+  height: 250px;
+  background-color: var(--primary-color);
+  border-radius: var(--button-radius);
+  padding: 10px;
+}
+
+.box-inner {
+  border: 1px solid white;
+  width: 250px;
+  height: 250px;
+  background-color: #f38332;
+  padding: 10px;
+}
+
+.box .box-inner {
+  width: 25%;
+  height: 25%;
+  background: #21b429;
+}
+
+.box > .box-inner {
+  background-color: palevioletred;
+}
+
+.card {
+  margin-top: 20px;
+  background-color: #d4dae8;
+  padding: 20px;
+  border-radius: 8px;
+  transition: background-color 250ms ease-in-out;
+}
+
+.card * {
+  transition: color 250ms ease-in-out;
+}
+
+.card:hover {
+  background-color: #5454d4;
+}
+
+.card__title {
+  margin-top: 0;
+  color: #5454d4;
+}
+
+.card__text {
+  margin-top: 0;
+  margin-bottom: 12px;
+  color: #151516;
+}
+
+.card:hover .card__text {
+  color: #d5d5d5;
+}
+
+.card__link {
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #5454d4;
+}
+
+.card:hover .card__title,
+.card:hover .card__link {
+  color: #fff;
+}
+
+/* a[href='#'] {
+  color: red !important;
+  text-decoration: underline !important;
+} */
+
+button:disabled {
+  background-color: #ccc;
+}
+
+button:not(:disabled) {
+  cursor: pointer;
+}
+
+.box:not(.box-alt) {
+}
+
+.pagination-item {
+  display: inline-flex;
+  width: 32px;
+  height: 32px;
+  background-color: var(--primary-color);
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.pagination-item[aria-disabled="true"] {
+  background-color: #ccc;
+}
+
+.form-control {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 20px;
+}
+
+.form-checkbox {
+  width: 24px;
+  height: 24px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+}
+
+.form-input:checked + div .form-checkbox:nth-child(2n + 1) {
+  border-color: var(--primary-color);
+  background-color: #acace5;
+}
+
+tbody tr:nth-child(2n + 1) {
+  background-color: #ccc;
+}

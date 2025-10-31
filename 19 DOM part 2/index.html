@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search App</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <!-- Hero -->
+    <section class="hero is-success has-background-primary">
+      <div class="hero-body">
+        <p class="title is-1 pb-3">Search App</p>
+        <p class="subtitle">This app is for your time managment</p>
+      </div>
+    </section>
+    <!-- /Hero -->
+    <!-- Content -->
+    <section class="section is-medium has-background-primary-05">
+      <div class="container">
+        <h1 class="title is-3">Manage tour task here</h1>
+        <div class="control has-icons-left">
+          <input
+            id="searchInput"
+            type="search"
+            class="input is-primary is-rounded"
+            placeholder="Search..."
+          />
+          <span class="icon is-small is-left">
+            <i class="fas fa-search"></i>
+          </span>
+        </div>
+        <section class="section">
+          <ul id="list"></ul>
+        </section>
+        <div class="mt-6">
+          <h1 class="title is-4">Your progress bar:</h1>
+          <progress class="progress is-primary mt-4" value="30" max="100">
+            30%
+          </progress>
+        </div>
+      </div>
+    </section>
+    <!-- /Content -->
+    <!-- Footer -->
+    <footer class="footer has-background-primary-15">
+      <div class="content has-text-centered">
+        <p>
+          <strong>Bulma</strong> by
+          <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is
+          licensed <a href="https://opensource.org/license/mit">MIT</a>. The
+          website content is licensed
+          <a href="https://creativecommons.org/licenses/by-nc-sa/4.0//"
+            >CC BY NC SA 4.0</a
+          >.
+        </p>
+      </div>
+    </footer>
+    <!-- /Footer -->
+    <!-- JS -->
+    <script src="index.js"></script>
+    <!-- /JS -->
+  </body>
+</html>
